@@ -1,0 +1,33 @@
+1. create a table st info with attributes prn, name, ml, m2,m3 :-
+create table st_info (prn int, name varchar2(20), ml number, m2 number, m3 number);
+2. to view the created table(s) that present in the database!
+select . from tab;
+3. to view the content in the table :-
+select . from st info;
+4. to display the structure of the table:
+desc st info;
+S. to insert 10 rows in the table :-
+
+
+insert into st info (prn, name, ml, m2, m3) values (01, 'Parth', 91, 92, 93);
+insert into st info (prn, name, m1, m2, m3) values (02, 'Arnav', 991, 92, 93);
+insert into st_info (prn, name, ml, m2, m3) values (03,'Raza', 91, 92, 93);
+insert into st info (prn, name, m1, m2, m3) values (04, 'Manthan', 91, 92, 93);
+insert into st info (prn, name, m1, m2, m3) values (05, 'Jayant', 91, 92, 93);
+insert into st into (prn, name, ml, m2, m3) values (06,
+insert into st info (prn, name, ml, m1, m2, m3) values (07, 'Shervin', 91, 92, 93);
+insert into st info (prn, name, mi, m2, m3) values (08,'Aditya', 91, 92, 93);
+insert into st info (prn, name, m1, m2, m3) values (09,
+insert into st info (prn, name, m1, m2, m3) values (10, 'Arnav', 91, 92, 93);
+
+3. add attribute total and perc to the table
+      alter table st_info add total number;
+      alter table st_info add perc number;
+
+
+
+
+
+1. calculate total & perc
+update st_info set total=m1 +m2+m3;
+update st_info set perc=total/3;
