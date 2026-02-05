@@ -16,4 +16,5 @@ update instructor set salary = salary + salary * .1 where dept_id = (select dept
 update instructor set salary = salary + salary * .05 where salary<80000;
 
 5.condition is salary is above 80000 but below 85000 deduce 5%
+
 update instructor set salary = salary - salary * .05 where salary<85000 and salary>80000;
